@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>애니매이션 실습</title>
+    <style>
+/*<!--        keyframe은 애니메이션을 정의함. -->*/
+
+        @keyframes textColorAnimation {
+            0% {color: blue;}
+            30% {color : green}
+            100% {color : red}
+        }
+        span{
+            animation-name: textColorAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: 10;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <span>span</span> 텍스트를 5초에 blue,green,red로 10초동 반복합니다.
+</p>
+
+</body>
+</html>
